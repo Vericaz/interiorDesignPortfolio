@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+:root {
+  --primary-gray: rgba(0, 0, 0, 0.5);
+  --light-gray: #f8f9fa;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body > #root > div {
+  height: 100vh;
+}
+
+.navbar {
+  position: sticky !important;
+}
+
+.navbar a {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.nav-link {
+  margin: 0rem 0.7rem 0rem 0.7rem;
+  border-top: 1px solid var(--light-gray) !important;
+}
+
+a.nav-link.active,
+a.nav-link.active:focus {
+  border-top: 1px solid var(--primary-gray) !important;
+}
+
+.main {
+  position: relative;
+  background: url(interior.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-info {
+  padding: 100px 100px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+}
+
+.main-info h1 {
+  font-size: 4vh;
+  font-weight: bold;
+  color: var(--primary-gray);
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  .main-info {
+    padding: 50px !important;
+  }
+  .navbar,
+  .main {
+    width: 100%;
+    background-image: url(interior2.jpg);
+  }
+}
+
+.jumbotron {
+  margin-bottom: 0px !important;
+}
+
+.jumbotron h1,
+p {
+  margin-left: 50px;
+}
+
+.carousel {
+  position: relative;
+  margin: 0px;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.carousel-item > img {
+  width: 450px;
+  height: 800px;
+}
+.carousel-item > .carousel-caption > {
+  font-weight: bold;
+}
+
+.carousel-item > .carousel-caption {
+  background-color: var(--primary-gray);
+  opacity: 0.6;
+  text-align: left;
+}
+
+.contact h1 {
+  margin-left: 50px;
+}
+
+.contact {
+  margin-top: 150px;
+}
